@@ -1,0 +1,1 @@
+# bcgov-wordpress-block-theme-digimod
