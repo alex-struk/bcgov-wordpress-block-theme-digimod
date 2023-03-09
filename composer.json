@@ -1,0 +1,54 @@
+{
+    "name": "bcgov-theme/bcgov-wordpress-block-theme-digimod",
+    "version": "1.1.2",
+    "type": "wordpress-theme",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://apps.itsm.gov.bc.ca/satis"
+        }
+    ],
+    "require-dev": {
+        "bcgov/wordpress-scripts": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bcgov\\Digimod\\Theme\\Block\\": [
+                "src",
+                "inc"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bcgov\\Digimod\\Theme\\Block\\Tests\\": "Tests/"
+        }
+    },
+    "scripts": {
+        "production": [
+            "npm run format",
+            "npm run build:production",
+            "Bcgov\\Digimod\\Script\\Checklists::postProductionChecks"
+        ],
+        "checklist": [
+            "Bcgov\\Digimod\\Script\\Checklists::postProductionChecks"
+        ],
+        "phpcs": [
+            "Bcgov\\Digimod\\Script\\Standards::phpcs"
+        ],
+        "phpcbf": [
+            "Bcgov\\Digimod\\Script\\Standards::phpcbf"
+        ],
+        "test": [
+            "Bcgov\\Digimod\\Script\\Tests::phpunit"
+        ],
+        "coverage": [
+            "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

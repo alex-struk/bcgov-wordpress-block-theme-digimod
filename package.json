@@ -1,0 +1,50 @@
+{
+  "name": "bcgov-wordpress-block-theme-digimod",
+  "version": "1.0.0",
+  "description": "BCGov Block Theme Theme Child for Digimod",
+  "author": "govwordpress@gov.bc.ca",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Wordpress",
+    "Block Theme",
+    "BCGov",
+    "Digimod"
+  ],
+  "homepage": "https://github.com/bcgov/bcgov-wordpress-block-theme-digimod#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcgov/bcgov-wordpress-block-theme-digimod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme-digimod/issues"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@bcgov/bc-sans": "^1.0.1",
+    "@wordpress/scripts": "^25.4.0",
+    "classnames": "^2.3.1",
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "build": "wp-scripts build src/scripts/admin src/scripts/public --output-path=dist",
+    "build:production": "npm run format && npm run lint:js && npm run fix:css && npm run lint:css && npm run test:unit && npm run build",
+    "lint:css": "wp-scripts lint-style src/styles",
+    "fix:css": "wp-scripts lint-style --fix --config @wordpress/stylelint-config/scss src/styles",
+    "lint:js": "wp-scripts lint-js src/scripts",
+    "format": "wp-scripts format src/scripts",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start src/scripts/admin src/scripts/public --output-path=dist",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js --passWithNoTests",
+    "test": "npm run test:unit"
+  },
+  "engines": {
+    "npm": ">=9.0.0 <10.0.0",
+    "node": ">=18.0.0 <19.0.0"
+  },
+  "dependencies": {
+    "@wordpress/icons": "^9.6.0"
+  }
+}

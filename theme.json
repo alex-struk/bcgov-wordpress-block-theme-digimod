@@ -1,0 +1,432 @@
+{
+	"version": 2,
+	"title": "BCGov Digimod Default",
+	"patterns": [
+		"bcgov-hero-banner"
+	],
+	"customTemplates": [
+		{
+			"name": "page-no-title",
+			"title": "Page – Content only",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "blank",
+			"title": "Blank page or post",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "single",
+			"title": "Single Post",
+			"postTypes": [
+				"post"
+			]
+		}
+	],
+	"templateParts": [
+		{
+			"title": "Global Header Container",
+			"name": "global-header-container",
+			"area": "header"
+		},
+		{
+			"title": "General Header with Polylang ribbon nav",
+			"name": "header-ribbon-polylang",
+			"area": "header"
+		},
+		{
+			"title": "General Header with ribbon nav",
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"title": "General Header with fullscreen nav",
+			"name": "header-takeover-nav",
+			"area": "header"
+		},
+		{
+			"title": "Main Menu",
+			"name": "navigation",
+			"area": "header"
+		},
+		{
+			"title": "Ribbon Menu (Main)",
+			"name": "ribbon-navigation",
+			"area": "header"
+		},
+		{
+			"title": "Takeover Menu (Main)",
+			"name": "takeover-navigation",
+			"area": "header"
+		},
+		{
+			"title": "Search Field",
+			"name": "search-field",
+			"area": "header"
+		},
+		{
+			"title": "Breadcrumb Nav – requires AIOSEO plugin",
+			"name": "breadcrumb-nav",
+			"area": "header"
+		},
+		{
+			"title": "Accessibility Skip Nav",
+			"name": "skip-nav",
+			"area": "header"
+		},
+		{
+			"title": "Global Footer Container",
+			"name": "global-footer-container",
+			"area": "footer"
+		},
+		{
+			"title": "BCGov Footer",
+			"name": "footer",
+			"area": "footer"
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
+		"blocks": {
+			"core/column": {
+				"spacing": {
+					"padding": true
+				}
+			},
+			"core/media-text": {
+				"spacing": {
+					"padding": true,
+					"margin": true
+				}
+			},
+			"core/navigation": {
+				"__experimentalLayout": {
+					"allowSwitching": false
+				}
+			}
+		},
+		"color": {
+			"palette": [
+				{
+					"slug": "primary-brand",
+					"color": "#0E3468",
+					"name": "Primary (Brand)"
+				},
+				{
+					"slug": "secondary-brand",
+					"color": "#3B5A94",
+					"name": "Secondary (Brand)"
+				},
+				{
+					"slug": "accent",
+					"color": "#F6B900",
+					"name": "Accent (Brand)"
+				},
+				{
+					"slug": "secondary-accent",
+					"color": "#ecc51d",
+					"name": "Secondary Accent"
+				},
+				{
+					"slug": "headline-color",
+					"color": "#0E3469",
+					"name": "Headline Colour"
+				},
+				{
+					"slug": "text-color",
+					"color": "#111111",
+					"name": "Text Colour"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#BDCC6F",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "quarternary",
+					"color": "#5A8F8E",
+					"name": "Quarternary"
+				},
+				{
+					"slug": "quinary",
+					"color": "#BCCFC9",
+					"name": "Quinary"
+				},
+				{
+					"slug": "senary",
+					"color": "#9FA08B",
+					"name": "Senary"
+				},
+				{
+					"slug": "septenary",
+					"color": "#6C5F4E",
+					"name": "Septenary"
+				},
+				{
+					"slug": "octonary",
+					"color": "#F26D6F",
+					"name": "Octonary"
+				},
+				{
+					"slug": "nonary",
+					"color": "#F2A488",
+					"name": "Nonary"
+				},
+				{
+					"slug": "denary",
+					"color": "#05A6D1",
+					"name": "Denary"
+				},
+				{
+					"slug": "ondenary",
+					"color": "#DA9901",
+					"name": "Ondenary"
+				},
+				{
+					"slug": "duodenary",
+					"color": "#2E585D",
+					"name": "Duodenary"
+				},
+				{
+					"slug": "tridenary",
+					"color": "#FFC48B",
+					"name": "Tridenary"
+				},
+				{
+					"slug": "quadenary",
+					"color": "#D4BA87",
+					"name": "Quadenary"
+				},
+				{
+					"slug": "gray-80",
+					"color": "#656565",
+					"name": "Gray 80"
+				},
+				{
+					"slug": "gray-60",
+					"color": "#A1A1A1",
+					"name": "Gray 60"
+				},
+				{
+					"slug": "gray-40",
+					"color": "#C7C7C7",
+					"name": "Gray 40"
+				},
+				{
+					"slug": "foreground",
+					"color": "#222222",
+					"name": "Foreground"
+				},
+				{
+					"slug": "background",
+					"color": "#f9f9f9",
+					"name": "Background"
+				},
+				{
+					"slug": "transparent",
+					"color": "transparent",
+					"name": "Transparent"
+				}
+			],
+			"gradients": [
+				{
+					"name": "Primary (Brand) Opacity",
+					"slug": "primary-brand-opacity",
+					"gradient": "linear-gradient(0deg, rgba(14, 52, 104,0.12) 0%, rgba(14, 52, 104,0.36) 100%)"
+				},
+				{
+					"name": "Secondary (Brand) Opacity",
+					"slug": "secondary-brand-opacity",
+					"gradient": "linear-gradient(0deg, rgba(59, 90, 148,0.12) 0%, rgba(59, 90, 148,0.36) 100%)"
+				},
+				{
+					"name": "Accent (Brand) Opacity",
+					"slug": "accent-brand-opacity",
+					"gradient": "linear-gradient(0deg, rgba(246, 185, 0,0.12) 0%, rgba(246, 185, 0,0.36) 100%)"
+				},
+				{
+					"name": "Secondary Accent Opacity",
+					"slug": "secondary-accent-opacity",
+					"gradient": "linear-gradient(0deg, rgba(236, 197, 29,0.12) 0%, rgba(236, 197, 29,0.36) 100%)"
+				},
+				{
+					"name": "Tertiary Opacity",
+					"slug": "tertiary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(189, 204, 111,0.12) 0%, rgba(189, 204, 111,0.36) 100%)"
+				},
+				{
+					"name": "Quarternary Opacity",
+					"slug": "quarternary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(90, 143, 142,0.12) 0%, rgba(90, 143, 142,0.36) 100%)"
+				},
+				{
+					"name": "Quinary Opacity",
+					"slug": "quinary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(188, 207, 201,0.12) 0%, rgba(188, 207, 201,0.36) 100%)"
+				},
+				{
+					"name": "Senary Opacity",
+					"slug": "senary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(159, 160, 139,0.12) 0%, rgba(159, 160, 139,0.36) 100%)"
+				},
+				{
+					"name": "Septenary Opacity",
+					"slug": "septenary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(108, 95, 78,0.12) 0%, rgba(108, 95, 78,0.36) 100%)"
+				},
+				{
+					"name": "Octonary Opacity",
+					"slug": "octonary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(242, 109, 111,0.12) 0%, rgba(242, 109, 111,0.36) 100%)"
+				},
+				{
+					"name": "Nonary Opacity",
+					"slug": "nonary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(242, 164, 136,0.12) 0%, rgba(242, 164, 136,0.36) 100%)"
+				},
+				{
+					"name": "Denary Opacity",
+					"slug": "denary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(5, 166, 209,0.12) 0%, rgba(5, 166, 209,0.36) 100%)"
+				},
+				{
+					"name": "Ondenary Opacity",
+					"slug": "ondenary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(218, 153, 1,0.12) 0%, rgba(218, 153, 1,0.36) 100%)"
+				},
+				{
+					"name": "Duodenary Opacity",
+					"slug": "duodenary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(5, 166, 209,0.12) 0%, rgba(5, 166, 209,0.36) 100%)"
+				},
+				{
+					"name": "Tridenary Opacity",
+					"slug": "tridenary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(255, 196, 139,0.12) 0%, rgba(255, 196, 139,0.36) 100%)"
+				},
+				{
+					"name": "Quadenary Opacity",
+					"slug": "quadenary-opacity",
+					"gradient": "linear-gradient(0deg, rgba(212, 186, 135,0.12) 0%, rgba(212, 186, 135,0.36) 100%)"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "840px",
+			"wideSize": "1440px"
+		},
+		"spacing": {
+			"blockGap": null,
+			"spacing": {
+				"blockGap": null,
+				"customSpacingSize": true,
+				"spacingScale": {
+					"operator": "*",
+					"increment": 1.75,
+					"steps": 9,
+					"mediumStep": 1.5,
+					"unit": "rem"
+				}
+			}
+		},		
+		"typography": {
+			"fluid": true,
+			"fontSizes": [
+				{
+					"slug": "small",
+					"size": "1rem",
+					"fluid": {
+						"min": "1rem",
+						"max": "1.25rem"
+					},
+					"name": "Small"
+				},
+				{
+					"slug": "medium",
+					"size": "1.125rem",
+					"fluid": {
+						"min": "1.125rem",
+						"max": "1.25rem"
+					},
+					"name": "Medium"
+				},
+				{
+					"slug": "large",
+					"size": "1.25rem",
+					"fluid": {
+						"min": "1.25rem",
+						"max": "1.5rem"
+					},
+					"name": "Large"
+				},
+				{
+					"slug": "extra-large",
+					"size": "1.5rem",
+					"fluid": {
+						"min": "1.5rem",
+						"max": "1.75rem"
+					},
+					"name": "Extra Large"
+				},
+				{
+					"slug": "extra-extra-large",
+					"size": "1.75rem",
+					"fluid": {
+						"min": "1.75rem",
+						"max": "2rem"
+					},
+					"name": "Extra Extra large"
+				}
+			],
+			"fontFamilies": []
+		},
+		"custom": {}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--foreground)"
+		},
+		"elements": {
+			"h1": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			},
+			"h2": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			},
+			"h3": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			},
+			"h4": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			},
+			"h5": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			},
+			"h6": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			}
+		}
+	}
+}
