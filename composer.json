@@ -28,19 +28,19 @@
         "production": [
             "npm run format",
             "npm run build:production",
-            "Bcgov\\Digimod\\Script\\Checklists::postProductionChecks"
+            "Bcgov\\Script\\Checklists::postProductionChecks"
         ],
         "checklist": [
-            "Bcgov\\Digimod\\Script\\Checklists::postProductionChecks"
+            "Bcgov\\Script\\Checklists::postProductionChecks"
         ],
         "phpcs": [
-            "Bcgov\\Digimod\\Script\\Standards::phpcs"
+            "Bcgov\\Script\\Standards::phpcs"
         ],
         "phpcbf": [
-            "Bcgov\\Digimod\\Script\\Standards::phpcbf"
+            "Bcgov\\Script\\Standards::phpcbf"
         ],
         "test": [
-            "Bcgov\\Digimod\\Script\\Tests::phpunit"
+            "Bcgov\\Script\\Tests::phpunit"
         ],
         "coverage": [
             "./vendor/bin/phpunit --coverage-html ./coverage/php/"
