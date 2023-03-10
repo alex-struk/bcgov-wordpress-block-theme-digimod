@@ -27,6 +27,8 @@ if ( class_exists( 'Bcgov\\Digimod\\Theme\\Block\\Loader' ) ) {
 	];
 	$loader    = new Loader( $base_dirs );
 	$loader->register();
+
+	
 }
 
 if ( class_exists( 'Bcgov\\Digimod\\Theme\\Block\\Setup' ) ) {

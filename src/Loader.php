@@ -2,7 +2,7 @@
 /**
  * Autoloader for Setup.
  *
- * @since 1.1.1
+ * @since 1.0.0
  *
  * @package Bcgov/Digimod/Theme/Block
  */
