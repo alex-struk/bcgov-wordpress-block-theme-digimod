@@ -17,13 +17,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Include the Loader and Setup classes.
-require_once get_template_directory() . '/src/Loader.php';
-require_once get_template_directory() . '/src/Setup.php';
+require_once get_theme_file_path() . '/src/Loader.php';
+require_once get_theme_file_path() . '/src/Setup.php';
 
 if ( class_exists( 'Bcgov\\Digimod\\Theme\\Block\\Loader' ) ) {
 	$base_dirs = [
-		get_template_directory() . '/src',
-		get_template_directory() . '/inc/core',
+		get_theme_file_path() . '/src',
+		get_theme_file_path() . '/inc/core',
 	];
 	$loader    = new Loader( $base_dirs );
 	$loader->register();
